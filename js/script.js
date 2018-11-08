@@ -9,3 +9,17 @@
 
 // DOCUMENT READY FUNCTION BELOW
 
+$("#shoot").click(function() {
+    $("#userChoice").text($("#input").val());
+   
+});
+
+var computer = ['paper', 'rock', 'scissors'];
+computer[Math.floor(Math.random() * 10)]
+if (r < .8) {
+choice = "paper"
+}else if (r > .9) {
+choice = 'scissors'
+} else {
+choice = 'rock'
+}
