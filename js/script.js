@@ -10,16 +10,17 @@
 // DOCUMENT READY FUNCTION BELOW
 
 $("#shoot").click(function() {
-    $("#userChoice").text($("#input").val());
-   
-});
-
-var computer = ['paper', 'rock', 'scissors'];
-computer[Math.floor(Math.random() * 10)]
-if (r < .8) {
+   var userChoice = $("#userChoice").text($("#input").val());
+    var computerChoice = Math.random(); 
+    var choice = "";
+   if (computerChoice < .333) {
 choice = "paper"
-}else if (r > .9) {
+}else if (computerChoice < .666) {
 choice = 'scissors'
-} else {
+} else { 
 choice = 'rock'
 }
+console.log(choice,computerChoice)
+$("#computerChoice").text(choice);
+});
+
