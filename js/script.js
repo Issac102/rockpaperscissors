@@ -10,7 +10,8 @@
 // DOCUMENT READY FUNCTION BELOW
 
 $("#shoot").click(function() {
-   var userChoice = $("#userChoice").text($("#input").val());
+   var userChoice = $("#input").val();
+   $("#userChoice").text(userChoice)
     var computerChoice = Math.random(); 
     var choice = "";
    if (computerChoice < .333) {
@@ -22,5 +23,9 @@ choice = 'rock'
 }
 console.log(choice,computerChoice)
 $("#computerChoice").text(choice);
+if (userChoice===choice){
+    $("#result").text("draw")
+    console.log("draw")
+}
 });
 
